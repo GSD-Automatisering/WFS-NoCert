@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    id        = "nl.app.workflowsuite.nl.WFSMobile"
+    versionCode="11"
+    version   = "3.0.0">
+
+
+
+  <author>GSD-Automatisering S. van de Laarschot</author>
+  <name>WFS</name>
+
+  <description>
+	WFS is applicatie waar u collega's / contactpersonen kunt raadplegen en direct kunt 
+	bellen of emailen met een druk op de knop
+  </description>
+
+	<preference name="stay-in-webview" value="true" />
+	<preference name="phonegap-version" value="2.3.0" />
+	<preference name="prerendered-icon" value="true" />
+	<preference name="target-device" value="universal" />
+	<preference name="webviewbounce" value="false" />
+
+	<feature name="http://api.phonegap.com/1.0/contacts"/>
+	<feature name="http://api.phonegap.com/1.0/file"/>
+	<feature name="http://api.phonegap.com/1.0/media"/>
+	<feature name="http://api.phonegap.com/1.0/network"/>
+	<feature name="http://api.phonegap.com/1.0/notification"/>
+
+	<icon src="icon.png" />
+	<gap:splash src="loadingscreen.png" />
+	
+
+  <access origin="*" />
+  <access origin="http://app.talent.workflowsuite.nl/" browserOnly="true" />
+
+
+</widget>
